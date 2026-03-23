@@ -1,0 +1,22 @@
+# base-config.yaml for Email Subscriptions plugin
+
+# === Apps Script backend (Gmail bridge) ===
+admin_base_url: "https://script.google.com/macros/s/<DEPLOYMENT_ID>/exec"
+admin_token: "supersecrettoken"
+
+# === Gmail base address (vi setter +<alias> før @) ===
+gmail_base_address: "alice@example.com"
+
+# === Aliaspolicy ===
+alias_append_random: true
+alias_random_len: 8   # a-z0-9, make it impossible to guess aliases
+
+# === Powerlevel  ===
+restrict_commands_to_local: true
+local_homeserver_domain: "vibb.me"
+pl_required: 50
+adminlist:
+  - "@alice:example.com"
+
+# === UI ===
+show_webhook_in_check: true
